@@ -54,9 +54,6 @@ conda install -c anaconda tensorflow-gpu=1.14
 # for distance code, set the cuda path and run:
 bash ./utils/tf_nndistance_compile.sh
 ```
-# for distance code, set the cuda path and run:
-bash ./utils/tf_nndistance_compile.sh
-```
 
 ### Datasets
 
