@@ -5,7 +5,7 @@
 
 This repository contains a tensorflow implementation of the paper:
 
-[Minimal Adversarial Examples for Deep Learning on 3D Point Clouds](https://ja-yeon-kim.github.io/minimun_point_atack.github.io/)
+[Minimal Adversarial Examples for Deep Learning on 3D Point Clouds](https://ja-yeon-kim.github.io/minimal_adversarial_pcd/)
 <br>
 [Jaeyeon Kim](mailto:jkimbi@connect.ust.hk), 
 [Binh-Son Hua](https://sonhua.github.io/),
