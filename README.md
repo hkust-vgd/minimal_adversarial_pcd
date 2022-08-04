@@ -1,13 +1,13 @@
 # Minimal Adversarial Examples for Deep Learning on 3D Point Clouds(ICCV 2021)
 
-<a href="https://ja-yeon-kim.github.io/minimun_point_atack.github.io/"><img src="https://img.shields.io/badge/WEBSITE-Visit%20project%20page-blue?style=for-the-badge"></a>
+<a href="https://ja-yeon-kim.github.io/minimal_adversarial_pcd/"><img src="https://img.shields.io/badge/WEBSITE-Visit%20project%20page-blue?style=for-the-badge"></a>
 <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Kim_Minimal_Adversarial_Examples_for_Deep_Learning_on_3D_Point_Clouds_ICCV_2021_paper.pdf"><img src="https://img.shields.io/badge/pdf-paper-red?style=for-the-badge"></a>
 
 This repository contains a tensorflow implementation of the paper:
 
 [Minimal Adversarial Examples for Deep Learning on 3D Point Clouds](https://ja-yeon-kim.github.io/minimun_point_atack.github.io/)
 <br>
-[Jaeyeon Kim](jkimbi@connect.ust.hk), 
+[Jaeyeon Kim](mailto:jkimbi@connect.ust.hk), 
 [Binh-Son Hua](https://sonhua.github.io/),
 [Duc Thanh Nguyen](https://ducthanhnguyen.weebly.com/),
 [Sai-Kit Yeung](https://www.saikit.org/index.html)<br>
