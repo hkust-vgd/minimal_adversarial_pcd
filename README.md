@@ -1,9 +1,9 @@
-# Minimal Adversarial Examples for Deep Learning on 3D Point Clouds(ICCV 2021)
+# Minimal Adversarial Examples for Deep Learning on 3D Point Clouds (ICCV 2021)
 
 <a href="https://ja-yeon-kim.github.io/minimal_adversarial_pcd/"><img src="https://img.shields.io/badge/WEBSITE-Visit%20project%20page-blue?style=for-the-badge"></a>
 <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Kim_Minimal_Adversarial_Examples_for_Deep_Learning_on_3D_Point_Clouds_ICCV_2021_paper.pdf"><img src="https://img.shields.io/badge/pdf-paper-red?style=for-the-badge"></a>
 
-This repository contains a tensorflow implementation of the paper:
+This repository contains a Tensorflow implementation of the paper:
 
 [Minimal Adversarial Examples for Deep Learning on 3D Point Clouds](https://ja-yeon-kim.github.io/minimal_adversarial_pcd/)
 <br>
@@ -37,29 +37,29 @@ The codebase is tested on
 - CUDA 10.0, CuDNN 7
 
 ### Installation
-- Clone this repo:
+- Clone this repository:
 ``` 
-git clone https://github.com/ja-yeon-kim/Minimal_point_attack.git
-cd Minimal_point_attack
+git clone https://github.com/hkust-vgd/minimal_adversarial_pcd.git
+cd minimal_adversarial_pcd
 ```
 
 - Install dependencies:
 ```
-conda create -n Minimum_point_attack python=3.7
-conda activate Minimum_point_attack
+conda create -n minimal_adversarial_pcd python=3.7
+conda activate minimal_adversarial_pcd
 conda install -c anaconda tensorflow-gpu=1.14
 ```
 
+- For distance code, please set the CUDA path and run:
 ```
-# for distance code, set the cuda path and run:
 bash ./utils/tf_nndistance_compile.sh
 ```
 
 ### Datasets
 
-- **Cad dataset**: we use cad dataset with 40 categories from [Modelnet40](https://modelnet.cs.princeton.edu/)
-- **Scan dataset**: we use real scan dataset with 15 categories from [ScanObjectNN](https://github.com/hkust-vgd/scanobjectnn)
-If you need to try with your own dataset, you need to make txt, h5 file and label txt file.
+- **CAD dataset**: we use the CAD dataset with 40 categories from [Modelnet40](https://modelnet.cs.princeton.edu/)
+- **Scan dataset**: we use real scans dataset with 15 categories from [ScanObjectNN](https://github.com/hkust-vgd/scanobjectnn)
+If you need to try with your own dataset, you need to make the .txt, .h5 file and the label .txt file accordingly.
 
 ### Pre-trained models
 Run the below command to train <a href="https://github.com/charlesq34/pointnet" target="_blank">Pointnet </a>
@@ -83,19 +83,16 @@ The descriptions of the arguments are shown below.
 | `class_loss_weight` | lambda for classification loss, default is 1 |
 | `count_weight` | lambda for minimum loss, default is 0.15 |
 
-The attack code is in `attack.py`
+The code for adversarial attack is in `attack.py`
 
 ### Visualize
-We provide visual code.<br>
-you can use `visualize.py` with Jupyter Interactive Window.<br>
+We provide the code for visualization in `visualize.py`. Please use it with the Jupyter Interactive Window.<br>
 The sample point clouds are in `test_sample folder`.
 
 ### Acknowledgments
-Our source code is devleoped based on the codebase of great attack papers: [3D Point Cloud Adversarial Attacks and Defenses](https://github.com/Daniel-Liu-c0deb0t/3D-Neural-Network-Adversarial-Attacks), [Generating 3D Adversarial Point Clouds](https://github.com/xiangchong1/3d-adv-pc). 
+Our source code is developed based on the codebase of the following papers: [3D Point Cloud Adversarial Attacks and Defenses](https://github.com/Daniel-Liu-c0deb0t/3D-Neural-Network-Adversarial-Attacks), [Generating 3D Adversarial Point Clouds](https://github.com/xiangchong1/3d-adv-pc). 
 
-We also specifically thank to [Pointnet](https://github.com/charlesq34/pointnet), [Pointnet++](https://github.com/charlesq34/pointnet2), [DGCNN](https://github.com/WangYueFt/dgcnn), [SpiderCNN](https://github.com/xyf513/SpiderCNN), [PointASNL](https://github.com/yanx27/PointASNL),  [Adversarial point perturbations on 3D objects](https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects), [PointCloud Saliency Maps](https://github.com/tianzheng4/PointCloud-Saliency-Maps), [Robust Adversarial Objects against Deep Learning Models](https://github.com/jinyier/ai_pointnet_attack), [ScanObjectNN](https://github.com/hkust-vgd/scanobjectnn), [Modelnet40](https://modelnet.cs.princeton.edu/).
-
-Overall, thank you so much to the authors for their great works and efforts to release source code and pre-trained weights.
+We also specially thank the following paper authors for their work and effort to release source code, pre-trained weights, and data: [Pointnet](https://github.com/charlesq34/pointnet), [Pointnet++](https://github.com/charlesq34/pointnet2), [DGCNN](https://github.com/WangYueFt/dgcnn), [SpiderCNN](https://github.com/xyf513/SpiderCNN), [PointASNL](https://github.com/yanx27/PointASNL),  [Adversarial point perturbations on 3D objects](https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects), [PointCloud Saliency Maps](https://github.com/tianzheng4/PointCloud-Saliency-Maps), [Robust Adversarial Objects against Deep Learning Models](https://github.com/jinyier/ai_pointnet_attack), [ScanObjectNN](https://github.com/hkust-vgd/scanobjectnn), [Modelnet40](https://modelnet.cs.princeton.edu/).
 
 ## Contacts
 If you have any questions, please drop an email to _jaeyeon.kim@connect.ust.hk_ or open an issue in this repository.
